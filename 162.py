@@ -27,12 +27,11 @@ def print_result(i):
     result = join_fact(i)
     count = len(result) // 40
     row = 1
-    for x in range(count):
+    for x in range(count+1):
         print("(%2d)"%row,end=' ')
         print(result[x*40:(x+1)*40])
         row += 1
-    print("(%2d)"%row,end=' ')
-    print(result[count*40:])
+
 
 if __name__ == '__main__':
     print_result(50)
